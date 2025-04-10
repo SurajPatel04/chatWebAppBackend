@@ -6,6 +6,8 @@ from fastapi.middleware.cors import CORSMiddleware
 
 class Post(BaseModel):
     user: str
+    model_type: str
+
 
 app = FastAPI()
 
@@ -29,5 +31,5 @@ async def root():
 async def genAi(new_chat: Post):
     # Call the imported 'chat' function directly
     # Also fix the typo 'respone' -> 'response'
-    response = chat(new_chat.user) 
+    response = chat(new_chat.user, new_chat.model_type) 
     return response
