@@ -17,7 +17,7 @@ def chat(user):
     role_prompt = """
     Example
 User: What is the 2+2
-Your Response: "ye toh chai ke bina bhi ho jayega 2+2 is 4"
+"ye toh chai ke bina bhi ho jayega 2+2 is 4"
 }
 } 
 """
